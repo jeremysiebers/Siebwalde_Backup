@@ -1,0 +1,176 @@
+make -f nbproject/Makefile-defaultActiveCA.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory 'C:/Users/jerem/Siebwalde/Faller_Car_ucontroller.X'
+rm -f  -r .ca/build/defaultActiveCA/production
+rm -f  -r .ca/dist/defaultActiveCA/production
+make[1]: Leaving directory 'C:/Users/jerem/Siebwalde/Faller_Car_ucontroller.X'
+[32mCLEAN SUCCESSFUL (total time: 154ms)[0m
+make -f nbproject/Makefile-defaultActiveCA.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory 'C:/Users/jerem/Siebwalde/Faller_Car_ucontroller.X'
+make  -f nbproject/Makefile-defaultActiveCA.mk .ca/dist/defaultActiveCA/production/Faller_Car_ucontroller.X.production.hex
+make[2]: Entering directory 'C:/Users/jerem/Siebwalde/Faller_Car_ucontroller.X'
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/tmr2.p1 mcc_generated_files/tmr2.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/adc.p1 mcc_generated_files/adc.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pwm4.p1 mcc_generated_files/pwm4.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pwm3.p1 mcc_generated_files/pwm3.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pwm6.p1 mcc_generated_files/pwm6.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pwm5.p1 mcc_generated_files/pwm5.c 
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/fvr.p1 mcc_generated_files/fvr.c 
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192[0m
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/device_config.p1 mcc_generated_files/device_config.c 
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/mcc.p1 mcc_generated_files/mcc.c 
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192[0m
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pin_manager.p1 mcc_generated_files/pin_manager.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pwm2.p1 mcc_generated_files/pwm2.c 
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192[0m
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/pwm1.p1 mcc_generated_files/pwm1.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/interrupt_manager.p1 mcc_generated_files/interrupt_manager.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/tmr0.p1 mcc_generated_files/tmr0.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/mcc_generated_files/tmr1.p1 mcc_generated_files/tmr1.c 
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/Main.p1 Main.c 
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/executer.p1 executer.c 
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192[0m
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192[0m
+mcc_generated_files/pwm4.c:78:36: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+     PWM4DCL = (dutyValue & 0x0003)<<6;
+             ~ ~~~~~~~~~~~~~~~~~~~~^~~
+mcc_generated_files/pwm6.c:78:36: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+     PWM6DCL = (dutyValue & 0x0003)<<6;
+             ~ ~~~~~~~~~~~~~~~~~~~~^~~
+1 warning generated.
+mcc_generated_files/pwm5.c:78:36: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+     PWM5DCL = (dutyValue & 0x0003)<<6;
+             ~ ~~~~~~~~~~~~~~~~~~~~^~~
+1 warning generated.
+1 warning generated.
+mcc_generated_files/pwm3.c:78:36: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+     PWM3DCL = (dutyValue & 0x0003)<<6;
+             ~ ~~~~~~~~~~~~~~~~~~~~^~~
+1 warning generated.
+mcc_generated_files/pwm2.c:89:18: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wconversion]
+        CCPR2L = dutyValue;
+               ~ ^~~~~~~~~
+mcc_generated_files/pwm2.c:94:18: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wconversion]
+        CCPR2L = dutyValue;
+               ~ ^~~~~~~~~
+mcc_generated_files/tmr0.c:80:41: warning: implicit conversion changes signedness: 'int' to 'uint16_t' (aka 'unsigned short') [-Wsign-conversion]
+    timer0ReloadVal16bit = (TMR0H << 8) | TMR0L;
+                         ~ ~~~~~~~~~~~~~^~~~~~~
+mcc_generated_files/pwm1.c:89:18: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wconversion]
+        CCPR1L = dutyValue;
+               ~ ^~~~~~~~~
+mcc_generated_files/pwm1.c:94:18: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wconversion]
+        CCPR1L = dutyValue;
+               ~ ^~~~~~~~~
+2 warnings generated.
+1 warning generated.
+2 warnings generated.
+executer.c:39:14: warning: implicit conversion changes signedness: 'int' to 'uint16_t' (aka 'unsigned short') [-Wsign-conversion]
+    Random = rand();
+           ~ ^~~~~~
+executer.c:146:14: warning: implicit conversion changes signedness: 'int' to 'uint16_t' (aka 'unsigned short') [-Wsign-conversion]
+    Random = rand();
+           ~ ^~~~~~
+2 warnings generated.
+"C:\Program Files\Microchip\xc8\v2.31\bin\xc8-cc.exe"  -mcpu=16F15323 -Wl,-Map=.ca/dist/defaultActiveCA/production/Faller_Car_ucontroller.X.production.map  -DXPRJ_defaultActiveCA=defaultActiveCA  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto      -Wl,--memorysummary,.ca/dist/defaultActiveCA/production/memoryfile.xml -o .ca/dist/defaultActiveCA/production/Faller_Car_ucontroller.X.production.elf  .ca/build/defaultActiveCA/production/mcc_generated_files/tmr2.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/adc.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pwm4.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pwm3.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pwm6.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pwm5.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/fvr.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/device_config.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pin_manager.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/mcc.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pwm2.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/pwm1.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/interrupt_manager.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/tmr0.p1 .ca/build/defaultActiveCA/production/mcc_generated_files/tmr1.p1 .ca/build/defaultActiveCA/production/Main.p1 .ca/build/defaultActiveCA/production/executer.p1     
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192[0m
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+mcc_generated_files/tmr2.c:88:: warning: (520) function "_TMR2_ModeSet" is never called
+mcc_generated_files/tmr2.c:94:: warning: (520) function "_TMR2_ExtResetSourceSet" is never called
+mcc_generated_files/tmr2.c:100:: warning: (520) function "_TMR2_Start" is never called
+mcc_generated_files/tmr2.c:106:: warning: (520) function "_TMR2_StartTimer" is never called
+mcc_generated_files/tmr2.c:111:: warning: (520) function "_TMR2_Stop" is never called
+mcc_generated_files/tmr2.c:117:: warning: (520) function "_TMR2_StopTimer" is never called
+mcc_generated_files/tmr2.c:122:: warning: (520) function "_TMR2_Counter8BitGet" is never called
+mcc_generated_files/tmr2.c:131:: warning: (520) function "_TMR2_ReadTimer" is never called
+mcc_generated_files/tmr2.c:136:: warning: (520) function "_TMR2_Counter8BitSet" is never called
+mcc_generated_files/tmr2.c:142:: warning: (520) function "_TMR2_WriteTimer" is never called
+mcc_generated_files/tmr2.c:147:: warning: (520) function "_TMR2_Period8BitSet" is never called
+mcc_generated_files/tmr2.c:152:: warning: (520) function "_TMR2_LoadPeriodRegister" is never called
+mcc_generated_files/tmr2.c:157:: warning: (520) function "_TMR2_HasOverflowOccured" is never called
+mcc_generated_files/adc.c:115:: warning: (520) function "_ADC_GetConversion" is never called
+mcc_generated_files/adc.c:138:: warning: (520) function "_ADC_TemperatureAcquisitionDelay" is never called
+mcc_generated_files/fvr.c:64:: warning: (520) function "_FVR_IsOutputReady" is never called
+mcc_generated_files/pwm2.c:98:: warning: (520) function "_PWM2_OutputStatusGet" is never called
+mcc_generated_files/pwm1.c:98:: warning: (520) function "_PWM1_OutputStatusGet" is never called
+mcc_generated_files/tmr0.c:95:: warning: (520) function "_TMR0_StartTimer" is never called
+mcc_generated_files/tmr0.c:101:: warning: (520) function "_TMR0_StopTimer" is never called
+mcc_generated_files/tmr0.c:107:: warning: (520) function "_TMR0_ReadTimer" is never called
+mcc_generated_files/tmr0.c:120:: warning: (520) function "_TMR0_WriteTimer" is never called
+mcc_generated_files/tmr0.c:127:: warning: (520) function "_TMR0_Reload" is never called
+mcc_generated_files/tmr1.c:99:: warning: (520) function "_TMR1_StartTimer" is never called
+mcc_generated_files/tmr1.c:105:: warning: (520) function "_TMR1_StopTimer" is never called
+mcc_generated_files/tmr1.c:111:: warning: (520) function "_TMR1_ReadTimer" is never called
+mcc_generated_files/tmr1.c:154:: warning: (520) function "_TMR1_StartSinglePulseAcquisition" is never called
+mcc_generated_files/tmr1.c:159:: warning: (520) function "_TMR1_CheckGateValueStatus" is never called
+executer.c:200:: warning: (520) function "_LedMax" is never called
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 185
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\dat\ini\16f15323.ini" at line 192
+:0:: error: (1347) can't find 0xD words (0xd withtotal) for psect "text40" in class "CODE" (largest unused contiguous range 0x6)
+Non line specific message::: advisory: (1493) updated 32-bit floating-point routines might trigger "can't find space" messages appearing after updating to this release; consider using the smaller 24-bit floating-point types
+:0:: error: (1347) can't find 0xA words (0xa withtotal) for psect "text20" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x9 words (0x9 withtotal) for psect "text18" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x9 words (0x9 withtotal) for psect "text50" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x9 words (0x9 withtotal) for psect "text54" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "text7" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "text8" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "text9" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "text10" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "text11" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "text12" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x7 words (0x7 withtotal) for psect "text41" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x7 words (0x7 withtotal) for psect "text53" in class "CODE" (largest unused contiguous range 0x6)
+:0:: error: (1347) can't find 0x6 words (0x6 withtotal) for psect "clrtext" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x6 words (0x6 withtotal) for psect "text4" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x6 words (0x6 withtotal) for psect "text6" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x6 words (0x6 withtotal) for psect "text15" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x6 words (0x6 withtotal) for psect "text42" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x4 words (0x4 withtotal) for psect "text17" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x4 words (0x4 withtotal) for psect "text46" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x4 words (0x4 withtotal) for psect "text49" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x3 words (0x3 withtotal) for psect "text39" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x1 words (0x1 withtotal) for psect "text45" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x1 words (0x1 withtotal) for psect "text48" in class "CODE" (largest unused contiguous range 0x0)
+:0:: error: (1347) can't find 0x1 words (0x1 withtotal) for psect "text52" in class "CODE" (largest unused contiguous range 0x0)
+(908) exit status = 1
+nbproject/Makefile-defaultActiveCA.mk:388: recipe for target '.ca/dist/defaultActiveCA/production/Faller_Car_ucontroller.X.production.hex' failed
+make[2]: Leaving directory 'C:/Users/jerem/Siebwalde/Faller_Car_ucontroller.X'
+[31mmake[2]: *** [.ca/dist/defaultActiveCA/production/Faller_Car_ucontroller.X.production.hex] Error 1
+make[1]: *** [.build-conf] Error 2
+make: *** [.build-impl] Error 2[0m
+nbproject/Makefile-defaultActiveCA.mk:85: recipe for target '.build-conf' failed
+make[1]: Leaving directory 'C:/Users/jerem/Siebwalde/Faller_Car_ucontroller.X'
+nbproject/Makefile-impl.mk:39: recipe for target '.build-impl' failed
+[31mBUILD FAILED (exit value 2, total time: 1s)[0m
