@@ -84,13 +84,13 @@ print ('\nDone')
 sys.stdout.flush ()
 
 # optimize interpreter performance
-sys.setcheckinterval (5000)
+#sys.setcheckinterval (5000)
 
 #-----------------------------------------------------------------------------#
 #                             Global Variables                                #
 #-----------------------------------------------------------------------------#
 STATUS_UPDATE_INTERVAL = 1000           # [ms]
-DEFAULT_COMPORT        = "COM5"
+DEFAULT_COMPORT        = "COM4"
 DEFAULT_BAUDRATE       = 250000         # [baud]
 DEFAULT_TIMEOUT        = 1.0            # [s]
 

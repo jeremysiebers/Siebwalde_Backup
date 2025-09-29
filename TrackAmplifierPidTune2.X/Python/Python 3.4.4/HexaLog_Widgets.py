@@ -597,7 +597,8 @@ class clsCaptureGraph (tkinter.Frame):
         # Setup some initial arrays, format doesn't really matter
         self._adc_0_data = numpy.array ([])
         self._tb         = numpy.array ([])
-        self._legend     = ['Data', 'Kp', 'Plant', 'Error', 'Output', 'PWM', 'Setpoint', 'output_sat']
+        #self._legend     = ['Data', 'Kp', 'ki', 'kd', 'Plant', 'Error', 'Output', 'PWM', 'Setpoint']
+        self._legend = ['Kp', 'ki', 'kd', 'Plant', 'Error', 'Output']
         
         # instantiate a figure and 2 subplots
         self._fig   = Figure ()
@@ -611,7 +612,7 @@ class clsCaptureGraph (tkinter.Frame):
         # note: in contrast to gtvX, where the figures have their own window, this figure is drawn on a canvas provided
         # by the main application!
         self._canvas = FigureCanvasTkAgg (self._fig, self)
-        self._canvas.show ()
+        self._canvas.draw()
         self._canvas.get_tk_widget ().grid (row = 0, sticky = tkinter.NSEW)
         
         # show the matlab toolbar
@@ -661,20 +662,21 @@ class clsCaptureGraph (tkinter.Frame):
     #-----
     # clear the current sets of data, re-initiate the pattern and capture data and calculate
     # where the capture overlaps the pattern and show the difference of the two
-    def update_capture (self, samples, datas, kps, plants, errors, outputs, pwms, setpoints, output_sats):
+    def update_capture (self, samples, datas, kps, kis, kds, plants, errors, outputs, pwms, setpoints):
         # create local timebase from sample numbers
         self._tb = numpy.array (samples)
         
         # create data for graph
         self._adc_0_data = []
-        self._adc_0_data.append (datas)
+        #self._adc_0_data.append (datas)
         self._adc_0_data.append (kps)
+        self._adc_0_data.append (kis)
+        self._adc_0_data.append (kds)
         self._adc_0_data.append (plants)
         self._adc_0_data.append (errors)
         self._adc_0_data.append (outputs)
-        self._adc_0_data.append (pwms)
-        self._adc_0_data.append (setpoints)
-        self._adc_0_data.append (output_sats)
+        #self._adc_0_data.append (pwms)
+        #self._adc_0_data.append (setpoints)
         self._adc_0_data = numpy.array (self._adc_0_data)
         
         # sowww....

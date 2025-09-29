@@ -7,7 +7,7 @@ import io
 import time
 import struct
 
-ser = serial.Serial('COM6', 250000, parity=serial.PARITY_NONE, timeout=1)
+ser = serial.Serial('COM3', 250000, parity=serial.PARITY_NONE, timeout=1)
 
 try:
     f = open('dump.csv', 'w')

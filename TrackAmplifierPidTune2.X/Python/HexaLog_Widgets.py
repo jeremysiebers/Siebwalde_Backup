@@ -597,7 +597,7 @@ class clsCaptureGraph (Tkinter.Frame):
         # Setup some initial arrays, format doesn't really matter
         self._adc_0_data = numpy.array ([])
         self._tb         = numpy.array ([])
-        self._legend     = ['Data', 'Kp', 'Plant', 'Error', 'Output', 'PWM', 'Setpoint', 'output_sat']
+        self._legend     = ['Data', 'Kp', 'ki', 'kd', 'Plant', 'Error', 'Output', 'PWM', 'Setpoint', 'output_sat']
         
         # instantiate a figure and 2 subplots
         self._fig   = Figure ()

@@ -541,19 +541,26 @@ class clsGraphTabSheet:
         samples = []
         datas = []
         kps = []
+        kis = []
+        kds = []
         plants = []
         errors = []
         outputs = []
         pwms = []
         setpoints = []
-        output_sats = []
         
         run = True
         sample = 0
-        setpoint = 512
-        error = 0
+        setpoint = 399
+        error_prev = 0
         output = 0
         kp = 1
+        ki = 0.01
+        kd = 0.5
+        integrator = 0
+        p_term = 0
+        i_term = 0
+        d_term = 0
         pwm = 399
         pwm_prev = 399
         plant = 15
@@ -576,8 +583,8 @@ class clsGraphTabSheet:
         
         # wait until we see 0xAA so we are in sync with whatever is coming from the micro
         b = 0
-        while (b != b'\xAA'):
-            b = self._master.receive_reply ()
+        #while (b != b'\xAA'):
+        #    b = self._master.receive_reply ()
             #b = struct.unpack ('B', c)[0]
             
         # now we are in sync, start collecting data
@@ -590,28 +597,46 @@ class clsGraphTabSheet:
                     if(len(s) == 5 and s[4] == 170):
                         data = (s[0] + (s[1] << 4) + (s[2] << 8) + (s[3] << 12)) #+ 25 # subtract/add the offset from the analog filter
                         error = setpoint - data;
-                        output = int((kp * error * plant) / 100);
-                        
+                        error = max(-50, min(50, error))
+
+                        # proportional term
+                        p_term = ((kp * error * plant) / 100);
+                        #output = int((kp * error * plant) / 100); # only P term
+
+                        # integral term
+                        integrator += error  # add error
+                        i_term = (ki * integrator * plant) / 100
+
+                        # derivative term
+                        d_term = kd * (error - error_prev)
+                        error_prev = error
+
+                        # regulator output
+                        output = int(p_term + i_term + d_term)
+
                         if(output > self._master._settings ["OUTSAT_P"]["value"]):
                             output = self._master._settings ["OUTSAT_P"]["value"]
                         elif(output < self._master._settings ["OUTSAT_M"]["value"]):
                             output = self._master._settings ["OUTSAT_M"]["value"]
-                        
+
+                        if (output == self._master._settings ["OUTSAT_P"]["value"] or output == self._master._settings ["OUTSAT_M"]["value"]):
+                            integrator -= error  # corrigeer laatste optelling
+
                         if(output < 0):
                             pwm = pwm_prev - abs(output); #When the error is negative (measured BEMF number is higher then setpoint BEMF(300)) the PWM dutycycle needs to be increased hence adding the negative number
                         elif(output > 0):
                             pwm = pwm_prev + output;
                         
-                        
-                        if (direction == "CCW" and pwm > self._master._settings ["PWM_MAX"]["value"]):
-                            pwm = self._master._settings ["PWM_MAX"]["value"]
+
+                        if (direction == "CCW" and pwm > 790): #self._master._settings ["PWM_MAX"]["value"]):
+                            pwm = 790 #self._master._settings ["PWM_MAX"]["value"]
                         elif(direction == "CCW" and pwm < 400):
                             pwm = 400
-                        elif(direction == "CW" and pwm < self._master._settings ["PWM_MIN"]["value"]):
-                            pwm = self._master._settings ["PWM_MIN"]["value"]
+                        elif(direction == "CW" and pwm < 10 ): #self._master._settings ["PWM_MIN"]["value"]):
+                            pwm = 10 #self._master._settings ["PWM_MIN"]["value"]
                         elif(direction == "CW" and pwm > 399):
                             pwm = 399
-                            
+
                         if(pwm_prev != pwm):
                             self._master.send_request (b'\xAA')
                             self._master.send_request (struct.pack('>B', (pwm>> 8)))
@@ -622,13 +647,14 @@ class clsGraphTabSheet:
                         
                         samples.append (sample)
                         datas.append (data)
-                        kps.append (kp)
+                        kps.append (p_term)
+                        kis.append(i_term)
+                        kds.append(d_term)
                         plants.append (plant)
                         errors.append (error)
                         outputs.append (output)
                         pwms.append (pwm)
                         setpoints.append (setpoint)
-                        output_sats.append (output_sat)
                         
                         sample = sample + 1
                         
@@ -658,7 +684,7 @@ class clsGraphTabSheet:
         
         # we're out of the loop, see if we have data and update the graph
         if (len (samples) > 1):
-            self._capture_graph.update_capture (samples, datas, kps, plants, errors, outputs, pwms, setpoints, output_sats)
+            self._capture_graph.update_capture (samples, datas, kps, kis, kds, plants, errors, outputs, pwms, setpoints)
             self._save_button ["state"]  = tkinter.NORMAL
             
             # copy data to local arrays so we can save it
@@ -666,12 +692,13 @@ class clsGraphTabSheet:
             self._adc0 = []
             self._adc0.append (datas)
             self._adc0.append (kps)
+            self._adc0.append (kis)
+            self._adc0.append (kds)
             self._adc0.append (plants)
             self._adc0.append (errors)
             self._adc0.append (outputs)
             self._adc0.append (pwms)
-            self._adc0.append (setpoints)
-            self._adc0.append (output_sats)
+            self._adc0.append(setpoints)
         else:
             print ("No samples...")
 
@@ -679,16 +706,24 @@ class clsGraphTabSheet:
     # save the data retrieved from the logger as .csv or .xls format
     def _save_data (self):
         # open a file dialog to get a file name
-        fname = tkFileDialog.asksaveasfilename (**self._file_dlg_opt)
+        fname = tkinter.filedialog.asksaveasfilename (**self._file_dlg_opt)
         
         # now... depending on the version of tkinter (python related) the return is either a string or a
         # tuple or list with one element, so see what it is and make the correct filename
+        '''
         if ( (type (fname) == types.TupleType) or (type (fname) == types.ListType) ):
             # python version that returns a tuple, returns an empty tuple if cancel is pressed
             if (len (fname) > 0):
                 fname = fname [0]
             else:
                 fname = None
+        '''
+        if isinstance(fname, (tuple, list)):
+            fname = fname[0] if len(fname) > 0 else None
+        elif isinstance(fname, str):
+            fname = fname if fname else None
+        else:
+            fname = None
             
         # avoid an error message if user cancelled the input
         if ( (fname != '') and (fname != None) ):
@@ -708,7 +743,7 @@ class clsGraphTabSheet:
                 
                 # now we can write
                 fptr = open (fname, "w")
-                fptr.write ("Sample, Data, Kp, Plant, Error, Output, PWM, Setpoint, output_sat\n")
+                fptr.write ("Sample, Data, Kp, ki, kd, Plant, Error, Output, PWM, Setpoint \n")
                 for cnt in range (len (self._tb)):
                     line = "%f"%(self._tb [cnt])
                     adc_row = adc0 [cnt]
